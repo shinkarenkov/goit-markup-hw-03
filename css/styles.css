@@ -31,6 +31,12 @@ ul{
     padding-left: 0;
     margin: 0;
 }
+
+.container{
+    margin: 0 auto;
+    width: 1158px;
+    padding: 0 15px;
+}
 /* style button */
 .button-exclusive {
     color: var(--standart-wite);
@@ -90,15 +96,26 @@ color: var(--accent-color);
 
 .nav-site{
     color: var(--title-color);
-
+    
 }
+.site-nav {
+    display: flex;
+} 
+.site-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+
 .nav-link{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    etter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 
 }
 .nav-link {
@@ -110,9 +127,16 @@ color: var(--accent-color);
     color: var(--button-hover);
     
 }
-.nav-address{
+
+.auth-nav {
     font-style: normal;
+    display: flex;
 }
+
+.auth-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+
  .address-link{
     color: var(--content-color);
     font-family: 'Roboto', sans-serif;
@@ -136,15 +160,21 @@ body {
         letter-spacing: 0.02em;
 }
 .main-section{
-    background-color: var(--bcg-color)
+    background-color: var(--bcg-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 292px;
+    margin-bottom: 120px;
+    
 }
 .main-title{
     color: var(--standart-wite);
         font-weight: 700;
         font-size: 56px;
-        text-align: center;
         line-height: 1.07;
-        letter-spacing: 0.02em;        
+        letter-spacing: 0.02em;  
+        margin-bottom: 48px;  
+   
 }
 
 .section-title {
@@ -155,6 +185,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 
 }
 
@@ -165,8 +196,15 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-}
 
+    margin-bottom: 8px;
+}
+ .descript-work{
+    margin-bottom: 120px;
+ }
+ .our-work{
+    margin-bottom: 120px;
+ }
 .discription-img{
     color: var(--content-color);
         font-size: 16px;
@@ -176,11 +214,20 @@ body {
 
 .our-team{
     background-color: var(--fotter-text);
+    padding: 120px 0;
+}
+.filter-btn{
+    margin-top: 96px;
+    margin-bottom: 71px;
+}
+.gallery-card{
+    margin-bottom: 120px;
 }
 /* style footer */
 
 .footer{
     background-color: var(--bcg-color);
+    padding: 120px 0;
 
 }
 .footer-content{
