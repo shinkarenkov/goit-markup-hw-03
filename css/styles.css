@@ -85,18 +85,20 @@ color: var(--accent-color);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: block;
+
+    margin-right: 76px;
 }
 .logo, .logo:hover, .logo:focus {
     color: var(--accent-color);
 }
 .logo-color {
-   
     color: var(--title-color);
 }
 
 .nav-site{
     color: var(--title-color);
-    
+
 }
 .site-nav {
     display: flex;
@@ -105,6 +107,17 @@ color: var(--accent-color);
     margin-right: 40px;
 }
 
+.main-list{
+    display: flex;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .nav-link{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -194,34 +207,79 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
+    text-align: start;
     letter-spacing: 0.02em;
 
     margin-bottom: 8px;
 }
+
+.work-list{
+    display: flex;
+}
+.work-list .item:not(:last-child){
+    margin-right: 24px;
+}
+
  .descript-work{
     margin-bottom: 120px;
+ }
+ .descript-list{
+    display: flex;
+
  }
  .our-work{
     margin-bottom: 120px;
  }
 .discription-img{
     color: var(--content-color);
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+        
 }
 
+.descript-list .item:not(:last-child){
+    margin-right: 24px;
+}
+.team-list .discription-img{
+    text-align: center;
+}
 .our-team{
     background-color: var(--fotter-text);
     padding: 120px 0;
 }
+.team-list{
+    display: flex;
+}
+.team-list .content-title{
+    text-align: center;
+}
+
+.team-list .item:not(:last-child){
+    margin-right: 24px;
+}
+
+.filter-section{
+    padding-top: 96px;
+    padding-bottom: 71px;
+}
 .filter-btn{
-    margin-top: 96px;
-    margin-bottom: 71px;
+    justify-content: center;
+    display: flex;
+
+}
+.filter-btn .item:not(:last-child):not(:last-child){
+    margin-right: 24px; 
 }
 .gallery-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 49px;
+    column-gap: 24px;
     margin-bottom: 120px;
+}
+.gallery-card .item{
+    flex-basis: auto;
 }
 /* style footer */
 
@@ -231,9 +289,12 @@ body {
 
 }
 .footer-content{
+    width: 264px;
 color: var(--fotter-text);
+margin-top: 16px;
     
 }
 .logo-footer{
 color: var(--fotter-span);
+
 }
