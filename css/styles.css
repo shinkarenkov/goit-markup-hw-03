@@ -272,6 +272,7 @@ body {
     margin-right: 24px; 
 }
 .gallery-card{
+    
     display: flex;
     flex-wrap: wrap;
     row-gap: 49px;
