@@ -8,6 +8,11 @@ ul  {
     list-style: none;
 }
 
+img{
+display: block;
+max-width: 100%;
+height: auto;
+}
 :root {
 
     --title-color: #2e2f42;
@@ -68,12 +73,15 @@ ul{
     line-height: 1.5;
     cursor: pointer;
     letter-spacing: 0.04em;
+    border: 1px solid var(--fotter-text);
+    border-radius: 4px;
 }
 
 .button-gallery:hover,
 .button-gallery:focus{
     background-color:var(--button-hover) ;
     color: var(--standart-wite);
+    border-color: transparent;
 }
 /* style header */
 .logo{
@@ -98,7 +106,7 @@ color: var(--accent-color);
 
 .nav-site{
     color: var(--title-color);
-    border-bottom: ;
+    border-bottom:1px solid var(--fotter-text) ;
 
 }
 
@@ -285,13 +293,13 @@ body {
     flex-wrap: wrap;
     row-gap: 49px;
     column-gap: 24px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .gallery-card .item{
     flex-basis: auto;
 }
 .gallery-text{
-    border: 1px solid rgba(231, 233, 252, 1);
+    border: 1px solid var(--fotter-text);
     border-top: none;
     padding: 32px 0;
 }
