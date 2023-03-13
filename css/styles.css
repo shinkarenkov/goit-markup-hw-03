@@ -336,7 +336,8 @@ body {
     row-gap: 49px;
     column-gap: 24px;
     padding-bottom: 120px;
-    flex-basis: calc((100%-24*2)/3);
+    align-content: center;
+    flex-basis: calc((100%-24px*2)/3);
 }
 .gallery-card .item{
     background:var(--standart-wite);
